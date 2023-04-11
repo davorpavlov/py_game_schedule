@@ -9,9 +9,9 @@ class Season:
         for i in range(0, 26, 2):
             wednesday = self.start_date + timedelta(weeks=i, days=0)
             sunday = self.start_date + timedelta(weeks=i, days=4)
-            print("Utakmice - Srijeda: ", wednesday, '&'  " Nedjelja: ", sunday, '\n')
+            print("Utakmice - Srijeda: ", wednesday,   " &  Nedjelja: ", sunday, '\n')
 
-start_date = date.today() + timedelta(days=1)  
+start_date = date.today() + timedelta(days=1)  # sezona pocinje sutra, 12.4.2023 i traje 26 tjedana
 
 season = Season(start_date)
 season.print_game_schedule()
