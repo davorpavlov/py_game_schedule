@@ -9,8 +9,7 @@ class Season:
         for i in range(0, 26, 2):
             wednesday = self.start_date + timedelta(weeks=i, days=0)
             sunday = self.start_date + timedelta(weeks=i, days=4)
-            print("Utakmica - Srijeda: ", wednesday)
-            print("Utakmica - Nedjelja: ", sunday)
+            print("Utakmice - Srijeda: ", wednesday, '&'  " Nedjelja: ", sunday, '\n')
 
 start_date = date.today() + timedelta(days=1)  
 
